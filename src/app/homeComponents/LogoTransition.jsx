@@ -16,8 +16,8 @@ const LogoTransition = ({screenRatio}) => {
   return (
     <div className="container relative w-[100vw] h-[100vh] flex justify-center items-center">
       {flag && <div className='flex justify-center items-center'><div className='absolute text-box text-xs font-bold text-center'>Take a journey</div></div>}
-      {flag && <Image className="absolute colorChangeDiv  images shadow-md rounded-full px-6  w-control w-[70%]  z-10 bg-white border-2 border-[#7e30e1]" src={assets.MainLogo}  alt="Your Image" />}
-      {!flag && <Image className="absolute transition  shadow-md rounded-full px-6 bouncingDiv  w-control w-[70%]  z-10 bg-white border-2 border-[#7e30e1] " src={assets.MainLogo}  alt="Your Image" />}
+      {flag && <Image className="absolute colorChangeDiv  images shadow-md rounded-full px-6  w-control w-[70%]  z-10 bg-white border-2 border-[#7e30e1]" src={assets.MainLogo}  alt="Your Image" loading="eager"/>}
+      {!flag && <Image className="absolute transition  shadow-md rounded-full px-6 bouncingDiv  w-control w-[70%]  z-10 bg-white border-2 border-[#7e30e1] " src={assets.MainLogo}  alt="Your Image" loading="eager" />}
     </div>
   );
 };

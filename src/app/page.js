@@ -2,10 +2,22 @@
 
 import LogoTransition from "./homeComponents/LogoTransition";
 import { useEffect, useState } from "react";
+import { useSelector , useDispatch } from "react-redux";
+
+import { toggleLight } from "./GlobalRedux/Features/GlobalStateSlice";
+
 import "./page.css";
 
 export default function Home() {
   const [flag, setFlag] = useState(false);
+
+  const dispatch = useDispatch();
+
+  const isLight = useSelector((state) => {
+    return state.GlobalState.isLight;
+  })
+
+  console.log(isLight);
 
   useEffect(() => {
     const timer = () => {
@@ -21,7 +33,7 @@ export default function Home() {
       document.getElementById('fadeInDiv').classList.add('active');
     }, 3100);
   });
-
+  
   return (
     <div>
       {flag && (
@@ -37,7 +49,9 @@ export default function Home() {
             </div>
 
             <div className="bg-white flex flex-wrap justify-between items-center">
-              <div></div>
+              <button onClick={()=>{
+                dispatch(toggleLight());
+              }}>Toggle</button>
               <div>
                 <video autoPlay width="500" loop muted>
                   <source src="hero-globe.mp4" type="video/mp4" />
