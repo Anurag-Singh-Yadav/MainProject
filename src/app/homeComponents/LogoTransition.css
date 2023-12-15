@@ -1,14 +1,38 @@
 .images{
-    animation: moveAnimation 4s ease-in-out;
+    animation: moveAnimation 5s ease-out;
 }
 
 @keyframes moveAnimation {
     0% {
       transform: translate(0, 0); 
-      scale: 1.5;
     }
     100% {
-        transform: translate(-400%, -1000%);
-        scale: 0.5;
+        transform: translate(-400%, -0%);
     }
+}
+
+@media (min-width: 400px) {
+  .text-box {
+    /* Additional styles for screens larger than or equal to 400px */
+    display: flex;
+    font-size: x-large;
   }
+  .w-control{
+    width: 44%;
+  }
+}
+
+.bouncingDiv {
+  position: relative;
+  animation: bounceAnimation 1.5s ease-in-out;
+}
+
+/* Define the bounce animation */
+@keyframes bounceAnimation {
+  0%,10%, 20%,40%, 50%, 60%,80%,90%, 100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-30px);
+  }
+}
