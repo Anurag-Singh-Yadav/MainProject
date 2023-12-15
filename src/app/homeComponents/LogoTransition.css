@@ -1,0 +1,14 @@
+.images{
+    animation: moveAnimation 4s ease-in-out;
+}
+
+@keyframes moveAnimation {
+    0% {
+      transform: translate(0, 0); 
+      scale: 1.5;
+    }
+    100% {
+        transform: translate(-400%, -1000%);
+        scale: 0.5;
+    }
+  }
