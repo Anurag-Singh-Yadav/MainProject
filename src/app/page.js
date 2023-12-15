@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import LogoTransition from "./homeComponents/LogoTransition";
 import { useEffect, useState } from "react";
@@ -17,20 +17,36 @@ export default function Home() {
       console.log(`Viewport Ratio: ${ratio}`);
     };
 
-    // Calculate and log the initial viewport ratio
     calculateViewportRatio();
-
-    // Add event listener for window resize to recalculate ratio
     window.addEventListener("resize", calculateViewportRatio);
-
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener("resize", calculateViewportRatio);
     };
   }, []);
   return (
-    <div className="">
-      <LogoTransition screenRatio = {screenRatio}></LogoTransition>
+    <div className="body-background min-h-screen">
+      {/* <LogoTransition screenRatio = {screenRatio}></LogoTransition> */}
+
+      <div>
+        {/* navbar */}
+        <div className="w-full h-10 top-banner flex justify-center text-center items-center ">
+          <marquee direction="right">
+            Crack the code, unlock your dream career
+          </marquee>
+        </div>
+
+        <div className="bg-white flex flex-wrap justify-between items-center">
+        <div>
+            
+        </div>
+          <div>
+            <video autoPlay width="500" loop muted>
+              <source src="hero-globe.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
