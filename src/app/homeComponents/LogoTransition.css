@@ -36,3 +36,12 @@
     transform: translateY(-30px);
   }
 }
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in.active {
+  opacity: 1;
+}
