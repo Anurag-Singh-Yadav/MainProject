@@ -1,3 +1,5 @@
+'use client'
+
 import LogoTransition from "./homeComponents/LogoTransition";
 import { useEffect, useState } from "react";
 export default function Home() {
@@ -8,10 +10,10 @@ export default function Home() {
     const calculateViewportRatio = () => {
       const w = window.innerWidth;
       const h = window.innerHeight;
-      const ratio = width / height;
+      const ratio = w / h;
       setScreenRatio(ratio);
-      console.log(`Viewport Width: ${width}px`);
-      console.log(`Viewport Height: ${height}px`);
+      console.log(`Viewport Width: ${w}px`);
+      console.log(`Viewport Height: ${h}px`);
       console.log(`Viewport Ratio: ${ratio}`);
     };
 
