@@ -21,7 +21,7 @@ export default function Home() {
     const timer = () => {
       setTimeout(() => {
         setFlag(true);
-      }, 300);
+      }, 3000);
     };
     timer();
   }, []);
@@ -31,11 +31,11 @@ export default function Home() {
     if (typeof window !== "undefined") {
       setTimeout(function () {
         document.getElementById("fadeInDiv").classList.add("active");
-      }, 310);
+      }, 3100);
     }
   }, []);
 
-  return (
+  return ( 
     <div>
       {flag && (
         <div id="fadeInDiv" className="body-background min-h-screen fade-in">
