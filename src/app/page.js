@@ -39,15 +39,6 @@ export default function Home() {
     <div>
       {flag && (
         <div id="fadeInDiv" className="body-background min-h-screen fade-in">
-
-          <div>
-            <div className="w-full h-10 top-banner flex justify-center text-center items-center ">
-              <marquee direction="right">
-                Crack the code, unlock your dream career
-              </marquee>
-            </div>
-
-
             <div className="bg-white flex justify-between items-center px-16 container-1">
               <div className="">
                 <div className="">Boost your dream career with Us</div>
@@ -69,9 +60,6 @@ export default function Home() {
                 </video>
               </div>
             </div>
-
-            
-          </div>
         </div>
       )}
       {!flag && <LogoTransition />}
