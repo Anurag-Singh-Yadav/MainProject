@@ -65,4 +65,5 @@ export default function Home() {
       {!flag && <LogoTransition />}
     </div>
   );
+  
 }
