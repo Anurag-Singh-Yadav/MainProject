@@ -13,10 +13,15 @@ import {toggleLight} from './GlobalRedux/Features/GlobalStateSlice.js'
 
 
 
+const roadMaps = ['DSA' , 'Web Development' , 'App Development' ]
+const tutorials = ['DSA' , 'Web Development' , 'App Development']
+const practice = ['Mock Interview' , 'DSA round' , 'Aptitude questions']
+
+
 export default function NavBar() {
 
-
   const [flag, setFlag] = useState(false);
+
 
   const [showBanner, setShowBanner] = useState(true);
   const [signInBtn, setSignInBtn] = useState(false);
@@ -55,6 +60,9 @@ export default function NavBar() {
     dispatch(toggleLight());
   }
 
+  const [roadmapFlag , setRoadMapFlag] = useState(false)
+  const [tutorialFlag , setTutorialFlag] = useState(false)
+  const [practiceFlag , setPracticeFlag] = useState(false)
 
 
   return (
@@ -85,16 +93,47 @@ export default function NavBar() {
           </div>
         )}
 
-        <div id="navBar" className={`grid grid-cols-1 md:grid-cols-6 gap-6 px-4  py-1 navbar items-center`}>
+        <div id="navBar" className={`grid grid-cols-1 md:grid-cols-6 gap-6 px-4  py-1 navbar items-center transition duration-1000  `}>
           <div className="flex justify-around items-center col-span-2">
-            <div className="flex justify-center items-center gap-3">
+            <div className="flex justify-center items-center relative" onMouseEnter={()=> {setRoadMapFlag(true)}} >
               <span>RoadMap</span> <RiArrowDropDownLine />
+              {
+              roadmapFlag && 
+              <div className="flex flex-col absolute top-1 pt-9 font-semibold " onMouseLeave={() => setRoadMapFlag(false)}>
+                {
+                  roadMaps.map((obj , index) => {
+                      return <p className=" hover:cursor-pointer border-y bg-[#e5e5f7] border-[#ffffffff] px-3 py-1 rounded-md" name={obj} onClick={() => {  }} key={index}>{obj}</p>
+                  })
+                }
+              </div>}
             </div>
-            <div className="flex justify-center items-center gap-3">
+            <div className="flex justify-center items-center relative" onMouseEnter={()=> setTutorialFlag(true)} >
               <span>Tutorials</span> <RiArrowDropDownLine />
+
+              {
+              tutorialFlag && 
+              <div className="flex flex-col absolute top-1 pt-9  font-semibold " onMouseLeave={()=>setTutorialFlag(false)}>
+                {
+                  tutorials.map((obj , index) => {
+                      return <p className=" hover:cursor-pointer border-y bg-[#e5e5f7] border-[#ffffffff] px-3 py-1 rounded-md" name={obj} onClick={() => {  }} key={index}>{obj}</p>
+                  })
+                }
+              </div>}
+
             </div>
-            <div className="flex justify-center items-center gap-3">
+            <div className="flex justify-center items-center relative" onMouseEnter={()=> setPracticeFlag(true)} >
               <span>Practice</span> <RiArrowDropDownLine />
+
+              {
+              practiceFlag && 
+              <div className="flex flex-col absolute top-1 pt-9 font-semibold " onMouseLeave={()=>setPracticeFlag(false)}>
+                {
+                  practice.map((obj , index) => {
+                      return <p className=" hover:cursor-pointer border-y bg-[#e5e5f7] border-[#ffffffff] px-3 py-1 rounded-md" name={obj} onClick={() => {  }} key={index}>{obj}</p>
+                  })
+                }
+              </div>}
+
             </div>
           </div>
 
