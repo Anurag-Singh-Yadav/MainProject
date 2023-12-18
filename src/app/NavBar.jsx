@@ -20,8 +20,9 @@ export default function NavBar() {
   return (
     <div>
       {
-        signInBtn && <div className="absolute w-full z-50 top-1 bg-red-100 h-full popup"><Signup setSignInBtn={setSignInBtn}/></div>
+        signInBtn && <div className="absolute w-full z-50 py-2 bg-red-100 h-[100wh] popup"><Signup setSignInBtn={setSignInBtn}/></div>
       }
+
       {showBanner && !isLogin && (
         <div className="w-full h-10 top-banner flex justify-center text-center items-center">
           <marquee direction="right">
