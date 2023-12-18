@@ -18,27 +18,21 @@ export default function Home() {
   console.log(isLight);
 
   useEffect(() => {
-    const timer = () => {
-      setTimeout(() => {
-        setFlag(true);
-      }, 3000);
-    };
-    timer();
-  }, []);
-
-  useEffect(() => {
-    // Check if window is defined before using it
     if (typeof window !== "undefined") {
       setTimeout(function () {
-        document.getElementById("fadeInDiv").classList.add("active");
-      }, 3100);
+        let b = document.getElementsByClassName("fadeInDiv");
+        for (let i = 0; i < b.length; i++) {
+          b[i].classList.add('active');
+        }
+        
+      }, 2200);
     }
   }, []);
 
   return ( 
     <div>
-      {flag && (
-        <div id="fadeInDiv" className="body-background min-h-screen fade-in">
+   
+        <div className="body-background min-h-screen fade-in fadeInDiv">
             <div className="bg-white flex justify-between items-center px-16 container-1">
               <div className="">
                 <div className="">Boost your dream career with Us</div>
@@ -61,8 +55,8 @@ export default function Home() {
               </div>
             </div>
         </div>
-      )}
-      {!flag && <LogoTransition />}
+ 
+      
     </div>
   );
   

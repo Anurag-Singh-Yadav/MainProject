@@ -6,7 +6,15 @@ function miniNavbar() {
 
     const [data , setData] = useState(null)
 
+    const isLight = useSelector((state) => {
+        return state.GlobalState.isLight;
+    })
 
+    let parentBg , childBg;
+
+    if(isLight){
+
+    }
 
     useEffect(() => {
         

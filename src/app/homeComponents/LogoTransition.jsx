@@ -10,14 +10,14 @@ const LogoTransition = ({screenRatio}) => {
   useEffect(() => {
     const timer = setTimeout(() =>{
       setFlag(true);
-    } , 700)
+    } , 200)
   })
 
   return (
-    <div className="container relative w-[100vw] h-[100vh] flex justify-center items-center">
-      {flag && <div className='flex justify-center items-center'><div className='absolute text-box text-xs font-bold text-center'>Take a journey</div></div>}
-      {flag && <Image className="absolute colorChangeDiv  images shadow-md rounded-full px-6  w-control w-[70%]  z-10 bg-white border-2 border-[#7e30e1]" src={assets.MainLogo}  alt="Your Image" loading="eager"/>}
-      {!flag && <Image className="absolute transition  shadow-md rounded-full px-6 bouncingDiv  w-control w-[70%]  z-10 bg-white border-2 border-[#7e30e1] " src={assets.MainLogo}  alt="Your Image" loading="eager" />}
+    <div className="container fixed top-0 left-0 mx-auto w-[100vw] h-[100vh] flex justify-center items-center bg-white">
+      {flag && <div className='fixed flex justify-center items-center'><div className=' text-box text-xs font-bold text-center'>Take a journey</div></div>}
+      {flag && <Image className="fixed colorChangeDiv  images shadow-md rounded-full px-6  w-control w-[70%]  z-10 bg-white border-2 border-[#7e30e1]" src={assets.MainLogo}  alt="Your Image" loading="eager"/>}
+      {!flag && <Image className="fixed transition  shadow-md rounded-full px-6 bouncingDiv  w-control w-[70%]  z-10 bg-white border-2 border-[#7e30e1] " src={assets.MainLogo}  alt="Your Image" loading="eager" />}
     </div>
   );
 };
