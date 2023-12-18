@@ -4,7 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { useState } from "react";
 import TextField from "@mui/material/TextField";
 import "./signup.css";
-function Page() {
+function Signup() {
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -25,7 +25,8 @@ function Page() {
   };
 
   return (
-    <div className="sm:w-[45%] w-full sm:mx-auto mx-2 py-2 z-20 border px-4">
+    <div className="sm:w-[45%] w-full bg-white sm:mx-auto mx-2 py-2 z-20 border px-4">
+      <div></div>
       <div className="flex justify-around items-center bg-[#31304D] text-white px-4 py-2">
         <div>Sign up</div>
         <div>Sign In</div>
@@ -109,4 +110,4 @@ function Page() {
   );
 }
 
-export default Page;
+export default Signup;
