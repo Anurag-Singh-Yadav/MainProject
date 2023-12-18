@@ -1,9 +1,6 @@
 "use client";
-import LogoTransition from "./homeComponents/LogoTransition";
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { toggleLight } from "./GlobalRedux/Features/GlobalStateSlice";
-
 import "./page.css";
 
 export default function Home() {
