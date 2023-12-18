@@ -1,8 +1,9 @@
-'use client';
+"use client";
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import { useState } from "react";
-
+import TextField from "@mui/material/TextField";
+import "./signup.css";
 function Page() {
   const [formData, setFormData] = useState({
     email: "",
@@ -20,68 +21,90 @@ function Page() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your logic for form submission here
     console.log("Form submitted:", formData);
   };
 
   return (
-    <div className="w-[50%] mx-auto py-2 z-20 border px-4">
-      <div className="flex justify-around items-center">
+    <div className="sm:w-[45%] w-full sm:mx-auto mx-2 py-2 z-20 border px-4">
+      <div className="flex justify-around items-center bg-[#31304D] text-white px-4 py-2">
         <div>Sign up</div>
         <div>Sign In</div>
       </div>
-      <p>Get Started.</p>
-      <p>
-        Already have an account? <button>Sign in</button>
+      <p className="my-3 text-xl md:text-3xl font-serif font-semibold ">
+        Get Started.
       </p>
-      <div className="flex gap-4">
-        <button className="flex gap-2 justify-between items-center">
+      <p className="my-3 text-normal md:text-xl">
+        Already have an account?{" "}
+        <button className="text-primarybtn italic font-bold hover:text-[#7A0BC0] font-serif">
+          Sign in
+        </button>
+      </p>
+
+      <div className="flex flex-wrap justify-around lg:flex-nowrap  items-center gap-2 lg:gap-3 font-semibold">
+        <button className="flex gap-1 sm:gap-2 lg:gap-3 justify-between border py-2 px-2 md:px-6 items-center">
           <FcGoogle />
           <span>Sign up with Google</span>
         </button>
-        <button className="flex gap-2 justify-between items-center">
+        <button className="flex gap-1 sm:gap-2 lg:gap-4 justify-between border bg-slate-600 text-white py-2 px-2 md:px-10 items-center">
           <FaGithub />
           <span>Sign up with Github</span>
         </button>
       </div>
-      <div>
-        <div>or</div>
+
+      <div className="grid grid-cols-7 justify-center items-center my-3">
+        <div className="h-[1px] col-span-3 bg-slate-700"></div>
+        <div className="col-span-1 mx-auto">or</div>
+        <div className="h-[1px] col-span-3  bg-slate-700"></div>
       </div>
+
       <form onSubmit={handleSubmit}>
-        <div className="flex flex-col">
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-          />
-        </div>
-        <div className="flex flex-col">
-          <label htmlFor="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            value={formData.password}
-            onChange={handleChange}
-          />
-        </div>
-        <div className="flex flex-col">
-          <label htmlFor="confirmPassword">Confirm Password</label>
-          <input
-            type="password"
-            id="confirmPassword"
-            name="confirmPassword"
-            value={formData.confirmPassword}
-            onChange={handleChange}
-          />
-        </div>
-        <div>
-          <button type="submit">Sign Up</button>
+        <TextField
+          fullWidth
+          required
+          label="User Name"
+          variant="outlined"
+          style={{ marginBottom: 10 }}
+          name="userName" // Add the name attribute
+          onChange={handleChange}
+        />
+
+        <TextField
+          fullWidth
+          required
+          label="Email Address"
+          variant="outlined"
+          style={{ marginBottom: 10 }}
+          name="email" // Add the name attribute
+          onChange={handleChange}
+        />
+
+        <TextField
+          fullWidth
+          required
+          label="Password"
+          variant="outlined"
+          style={{ marginBottom: 10 }}
+          type="password" // Set input type to password
+          name="password" // Add the name attribute
+          onChange={handleChange}
+        />
+
+        <TextField
+          fullWidth
+          required
+          label="Confirm Password"
+          variant="outlined"
+          style={{ marginBottom: 10 }}
+          type="password" // Set input type to password
+          name="confirmPassword" // Add the name attribute
+          onChange={handleChange}
+        />
+
+        <div className="flex justify-center items-center">
+          <button type="submit">Submit</button>
         </div>
       </form>
+
     </div>
   );
 }
