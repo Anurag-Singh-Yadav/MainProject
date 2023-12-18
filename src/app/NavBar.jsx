@@ -64,7 +64,7 @@ export default function NavBar() {
       {!flag && <LogoTransition />}
 
       {signInBtn && (
-        <div className="absolute w-full z-50 top-1 bg-red-100 h-full popup">
+        <div className="absolute w-full z-50 py-2 h-full popup">
           <Signup setSignInBtn={setSignInBtn} />
 
         </div>
