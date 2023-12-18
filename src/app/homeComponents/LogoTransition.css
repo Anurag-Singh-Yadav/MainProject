@@ -1,5 +1,5 @@
 .images{
-    animation: moveAnimation 5s ease-out;
+    animation: moveAnimation 4s ease-out;
 }
 
 @keyframes moveAnimation {
@@ -24,7 +24,7 @@
 
 .bouncingDiv {
   position: relative;
-  animation: bounceAnimation 1.5s ease-in-out;
+  animation: bounceAnimation 3s ease-in-out;
 }
 
 /* Define the bounce animation */
