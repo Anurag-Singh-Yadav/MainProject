@@ -40,7 +40,7 @@ export default function NavBar() {
           <div className="flex justify-center items-center gap-3"><span>Practice</span> <RiArrowDropDownLine /></div>
         </div>
 
-        <p className="mx-auto col-span-2 rounded-lg border font-bold text-2xl font-serif px-4">
+        <p className="mx-auto py-2 col-span-2 rounded-lg border font-bold text-2xl font-serif px-4">
           InterviewExpress
         </p>
 
