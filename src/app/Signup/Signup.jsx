@@ -2,6 +2,7 @@
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import { useState } from "react";
+import {signIn, signOut } from "next-auth/react"
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import TextField from "@mui/material/TextField";
 import "./signup.css";
@@ -69,14 +70,14 @@ function Signup({ setSignInBtn }) {
         {isSignup && (
           <p className="my-3 text-normal md:text-xl">
             Already have an account?{" "}
-            <button className="text-primarybtn italic font-bold hover:text-[#7A0BC0] hover:underline font-serif">
+            <button className="text-primarybtn italic font-bold hover:text-[#7A0BC0] hover:underline font-serif" onClick={()=>{setIsgnup(false);}}>
               Sign in
             </button>
           </p>
         )}
 
         <div className="flex flex-wrap justify-around lg:flex-nowrap  items-center gap-2 lg:gap-3 font-semibold">
-          <button className="flex gap-1 sm:gap-2 lg:gap-3 justify-between border-[1.5px] rounded-md border-black py-2 px-2 md:px-6 items-center">
+          <button className="flex gap-1 sm:gap-2 lg:gap-3 justify-between border-[1.5px] rounded-md border-black py-2 px-2 md:px-6 items-center" onClick={()=>{signIn()}}>
             <FcGoogle />
             <span>Sign up with Google</span>
           </button>
