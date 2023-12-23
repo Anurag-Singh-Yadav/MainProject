@@ -74,7 +74,6 @@ export default function NavBar() {
       {signInBtn && (
         <div className="absolute w-full z-50 py-2 h-full popup">
           <Signup setSignInBtn={setSignInBtn} />
-
         </div>
       )}
 

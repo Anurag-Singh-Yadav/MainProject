@@ -2,7 +2,7 @@
 import { FcGoogle } from "react-icons/fc";
 import { FaGithub } from "react-icons/fa";
 import { useState } from "react";
-import {signIn, signOut } from "next-auth/react"
+import {useSession,signIn, signOut } from "next-auth/react"
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import TextField from "@mui/material/TextField";
 import "./signup.css";
@@ -12,6 +12,7 @@ function Signup({ setSignInBtn }) {
     password: "",
     confirmPassword: "",
   });
+
   const [isSignup, setIsgnup] = useState(true);
 
   const handleChange = (e) => {
@@ -81,7 +82,7 @@ function Signup({ setSignInBtn }) {
             <FcGoogle />
             <span>Sign up with Google</span>
           </button>
-          <button className="flex gap-1 sm:gap-2 lg:gap-4 justify-between border bg-slate-700 rounded-md text-white py-2 px-2 md:px-10 items-center">
+          <button className="flex gap-1 sm:gap-2 lg:gap-4 justify-between border bg-slate-700 rounded-md text-white py-2 px-2 md:px-10 items-center" onClick={()=>{signIn()}}>
             <FaGithub />
             <span>Sign up with Github</span>
           </button>

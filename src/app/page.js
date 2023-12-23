@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import "./page.css";
+import ReviewCard from "./homeComponents/ReviewCard";
 
 export default function Home() {
   const [flag, setFlag] = useState(false);
@@ -51,9 +52,10 @@ export default function Home() {
                 </video>
               </div>
             </div>
+            <ReviewCard></ReviewCard>
         </div>
  
-      
+        
     </div>
   );
   
