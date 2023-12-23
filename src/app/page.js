@@ -28,7 +28,7 @@ export default function Home() {
   }, []);
 
   return ( 
-    <div>
+    <div className="">
    
         <div className="body-background min-h-screen fade-in fadeInDiv">
             <div className="bg-white flex justify-between items-center px-16 container-1">
