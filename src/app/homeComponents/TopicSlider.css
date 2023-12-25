@@ -1,0 +1,34 @@
+.carousel-container {
+  background: linear-gradient(to bottom right, rgb(255, 255, 255), #c1b3b3);
+}
+
+.dsa {
+  background-color: #2A9D85;
+  color: white;
+}
+.webDevelopment {
+  background-color: #3d405b;
+  color: white;
+}
+
+.competitive {
+  background-color: #f4a261;
+}
+
+.appDevelopment {
+  background-color: #287271;
+  color: white;
+}
+
+.machineLearning {
+  background-color: #264653;
+    color: white;
+}
+
+.dataScience {
+  background-color: #e76f51;
+}
+
+.active-class{
+    border-bottom: yellow 2px solid;
+}

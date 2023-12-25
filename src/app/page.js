@@ -1,8 +1,12 @@
 "use client";
+
+
+
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import "./page.css";
 import ReviewCard from "./homeComponents/ReviewCard";
+import TopicSlider from "./homeComponents/TopicSlider";
 
 export default function Home() {
   const [flag, setFlag] = useState(false);
@@ -52,6 +56,9 @@ export default function Home() {
                 </video>
               </div>
             </div>
+
+            <TopicSlider />
+
             <ReviewCard></ReviewCard>
         </div>
  
