@@ -98,7 +98,7 @@ export default function NavBar() {
               <span>RoadMap</span> <RiArrowDropDownLine />
               {
               roadmapFlag && 
-              <div className="flex flex-col absolute border border-black pt-9 font-semibold " onMouseLeave={() => setRoadMapFlag(false)}>
+              <div className="flex flex-col absolute top-0 pt-10 font-semibold " onMouseLeave={() => setRoadMapFlag(false)}>
                 {
                   roadMaps.map((obj , index) => {
                       return <p className=" hover:cursor-pointer border-y bg-[#e5e5f7] border-[#ffffffff] px-3 py-1 rounded-md" name={obj} onClick={() => {  }} key={index}>{obj}</p>
@@ -111,7 +111,7 @@ export default function NavBar() {
 
               {
               tutorialFlag && 
-              <div className="flex flex-col absolute border-1 border-black -top-0 pt-9  font-semibold " onMouseLeave={()=>setTutorialFlag(false)}>
+              <div className="flex flex-col absolute border-1 border-black -top-0 pt-10  font-semibold " onMouseLeave={()=>setTutorialFlag(false)}>
                 {
                   tutorials.map((obj , index) => {
                       return <p className=" hover:cursor-pointer border-y bg-[#e5e5f7] border-[#ffffffff] px-3 py-1 rounded-md" name={obj} onClick={() => {  }} key={index}>{obj}</p>
@@ -125,7 +125,7 @@ export default function NavBar() {
 
               {
               practiceFlag && 
-              <div className="flex flex-col absolute border-1 border-black -top-0 pt-9 font-semibold " onMouseLeave={()=>setPracticeFlag(false)}>
+              <div className="flex flex-col absolute border-1 border-black -top-0 pt-10 font-semibold " onMouseLeave={()=>setPracticeFlag(false)}>
                 {
                   practice.map((obj , index) => {
                       return <p className=" hover:cursor-pointer border-y bg-[#e5e5f7] border-[#ffffffff] px-3 py-1 rounded-md" name={obj} onClick={() => {  }} key={index}>{obj}</p>
