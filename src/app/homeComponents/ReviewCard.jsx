@@ -27,14 +27,14 @@ const ReviewCard = () => {
             <Carousel responsive={responsive} showDots={true} infinite={true} autoPlay={true} autoPlaySpeed={2500}>
                 {indianCricketers.map((review, index) => (
                     <div key={index} className="mb-7 hover:scale-105 transition-transform duration-2000 px-4"> 
-                        <div className="bg-primarybtn text-white rounded-md min-h-[250px] cursor-pointer px-4 py-3">
+                        <div className="border-[2px] rounded-md min-h-[250px] cursor-pointer px-4 py-3">
                             <div className="flex justify-start gap-2 items-center mb-3">
                                 <img
                                     src={review.imageUrl}
-                                    className="h-[80px] rounded-full"
+                                    className="h-[70px] rounded-full aspect-square"
                                     alt={review.name}
                                 />
-                                <div>{review.name}</div>
+                                <div className="md:text-2xl md:font-semibold text-primarybtn">{review.name}</div>
                             </div>
                             <div>{review.description}</div>
                         </div>
