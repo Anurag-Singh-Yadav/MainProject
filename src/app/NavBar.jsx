@@ -64,7 +64,7 @@ export default function NavBar() {
   const [tutorialFlag , setTutorialFlag] = useState(false)
   const [practiceFlag , setPracticeFlag] = useState(false)
 
-  const dropDownHandler
+  // const dropDownHandler
 
   return (
     <div>
