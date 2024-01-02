@@ -5,7 +5,28 @@ function RenderLetters() {
   const [index, setIndex] = useState(0);
   const [reverse, setReverse] = useState(false);
 
-  const textToPrint = `#include <iostream>\nusing namespace std;\nclass Fibonacci {\n  private:\n      int terms;\n  public:\n      Fibonacci(int n) : terms(n) {}\n      void calculateFibonacci(int a = 0, int b = 1, int c = 0) {\n          if (c < terms) {\n              cout << a << " ";\n              calculateFibonacci(b, a + b, c + 1);\n          }\n      }\n  };\n  int main() {\n      int n;\n      cout << "Enter the number of terms for Fibonacci series: ";\n      cin >> n;\n      Fibonacci fib(n);\n      fib.calculateFibonacci();\n      return 0;\n  }`;
+  const textToPrint = `#include <iostream>
+using namespace std;
+  
+class Fibonacci {
+public:
+  int calFib(int n) {
+      if (n <= 1)
+        return n;
+
+      return calFib(n - 1) + calFib(n - 2);
+      }
+  };
+  
+int main() {
+    int n;
+    cout << "Enter nth terms for Fibonacci series: ";
+    cin >> n;
+    Fibonacci fib;
+    cout << "nth Fibonacci number is: ";
+    cout << fib.calFib(n) << endl;
+    return 0;
+}`;
 
   useEffect(() => {
     const intervalId = setInterval(() => {

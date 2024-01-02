@@ -1,6 +1,22 @@
-.technical1{
-    font-family: 'Dancing Script', cursive;
+.technical1 {
+  background: #7043e3;
+  background: -webkit-linear-gradient(to right, #7043e3 37%, #cf1512 69%);
+  background: -moz-linear-gradient(to right, #7043e3 37%, #cf1512 69%);
+  background: linear-gradient(to right, #7043e3 37%, #cf1512 69%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.technical2{
-    font-family: 'Open Sans', sans-serif;
+.technical2 {
+  font-family: "Open Sans", sans-serif;
+}
+.technical3 {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    letter-spacing: 1.1px;
+    word-spacing: 2px;
+    color: #000000;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
 }

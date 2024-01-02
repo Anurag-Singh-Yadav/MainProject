@@ -26,6 +26,10 @@ module.exports = {
         light5:"#085467",
         light6:"#AFA7BB",
         light7:"#F4C0B3",
+        dark1:"#287271",
+        dark2:"#F4A261",
+        dark3:"#E9C46A",
+        dark4:"#AE2D68"
       },
     },
     plugins: [],

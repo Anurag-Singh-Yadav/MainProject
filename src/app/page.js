@@ -28,7 +28,7 @@ export default function Home() {
           b[i].classList.add('active');
         }
         
-      }, 220);
+      }, 2200);
     }
   }, []);
 
