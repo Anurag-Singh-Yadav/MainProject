@@ -5,9 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Afacad:wght@400;500&family=Lato:wght@300;400;700&family=Mukta:wght@200;300;500&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100&family=Roboto:wght@300;400&display=swap");
 
 .body-background {
-  background-color: #e5e5f7;
-  opacity: 1;
-  background-image: radial-gradient(#f6f6fe 1.35px, #e5e5f7 1.35px);
+  background-color: #F6F7F8;
   background-size: 27px 27px;
   /* font-family: 'Afacad', sans-serif;
 font-family: 'Lato', sans-serif;
@@ -15,6 +13,11 @@ font-family: 'Mukta', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif; */
 }
+
+.body-background-dark {
+  background-color: (#2d3142 + #1f4021) / 2;
+}
+
 .top-banner {
   background-image: url(../assets/navbackGround.png);
   background-color: #4fb3d4;
