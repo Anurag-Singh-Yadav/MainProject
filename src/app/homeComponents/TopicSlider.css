@@ -2,33 +2,40 @@
   background: linear-gradient(to bottom right, rgb(255, 255, 255), #c1b3b3);
 }
 
-.dsa {
-  background-color: #2A9D85;
-  color: white;
+.topics-header{
+  font-family :Georgia, 'Times New Roman', Times, serif
 }
-.webDevelopment {
-  background-color: #3d405b;
-  color: white;
+.light1 {
+    background: linear-gradient(to bottom, #e3dbfa, #e7e5ec);
+  color: black;
 }
-
-.competitive {
-  background-color: #f4a261;
-}
-
-.appDevelopment {
-  background-color: #287271;
-  color: white;
+.light2 {
+  background : linear-gradient(to bottom , #f7d7ee , #f2e8ef);
+  color: black;
 }
 
-.machineLearning {
-  background-color: #264653;
-    color: white;
+.light3 {
+  background: linear-gradient(to bottom ,  #bfefe2 , #e5f1ef);
+  color: black;
 }
 
-.dataScience {
-  background-color: #e76f51;
+.light4 {
+  background: linear-gradient(to bottom ,  #AFA7BB  , #d2ced6);
+    color: black;
+}
+
+.light5 {
+  background-color: #d77e67;
 }
 
 .active-class{
     border-bottom: yellow 2px solid;
+}
+
+.topic-card{
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.topic-card:hover{
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 2);
 }
