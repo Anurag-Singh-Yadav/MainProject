@@ -64,7 +64,9 @@ export default function NavBar() {
   const [tutorialFlag , setTutorialFlag] = useState(false)
   const [practiceFlag , setPracticeFlag] = useState(false)
 
-  // const dropDownHandler
+
+  let firstFlag = true , secondFlag = true , thirdFlag = true;
+
 
   return (
     <div>
@@ -95,7 +97,7 @@ export default function NavBar() {
 
         <div id="navBar" className={`grid grid-cols-1 md:grid-cols-6 gap-6 px-4  py-1 navbar items-center transition duration-1000  `}>
           <div className="flex justify-around items-center col-span-2">
-            <div className="flex justify-center items-center relative" onMouseEnter={()=> {setRoadMapFlag(true)}} >
+            <div className="flex justify-center items-center relative" onMouseEnter={() => {firstFlag = true; setTimeout(()=>{if(firstFlag)setRoadMapFlag(true);} , 200)}} onMouseLeave={() => { firstFlag = false; }} >
               <span>RoadMap</span> <RiArrowDropDownLine />
               {
               roadmapFlag && 
@@ -107,7 +109,7 @@ export default function NavBar() {
                 }
               </div>}
             </div>
-            <div className="flex justify-center items-center relative" onMouseEnter={()=> setTutorialFlag(true)} >
+            <div className="flex justify-center items-center relative" onMouseEnter={() => {secondFlag = true; setTimeout(()=>{if(secondFlag)setTutorialFlag(true);} , 200)}} onMouseLeave={() => { secondFlag = false; }} >
               <span>Tutorials</span> <RiArrowDropDownLine />
 
               {
@@ -121,7 +123,7 @@ export default function NavBar() {
               </div>}
 
             </div>
-            <div className="flex justify-center items-center relative" onMouseEnter={()=> setPracticeFlag(true)} >
+            <div className="flex justify-center items-center relative" onMouseEnter={() => {thirdFlag = true;setTimeout(()=>{if(thirdFlag)setPracticeFlag(true);} , 200)}} onMouseLeave={() => { thirdFlag = false; }} >
               <span>Practice</span> <RiArrowDropDownLine />
 
               {
