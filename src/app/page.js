@@ -8,7 +8,7 @@ import "./page.css";
 import ReviewCard from "./homeComponents/ReviewCard";
 import TopicSlider from "./homeComponents/TopicSlider";
 import Technicalskils from "./homeComponents/Technicalskils";
-
+ 
 export default function Home() {
   const [flag, setFlag] = useState(false);
 
