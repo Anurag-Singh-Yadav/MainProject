@@ -8,7 +8,7 @@ function IDE() {
         {
           (() => {
             const elements = [];
-            for (let i = 0; i < 20; i++) {
+            for (let i = 0; i < 22; i++) {
               elements.push(<div key={i} className=' border-r-[1px] border-r-white'>{i+1}</div>);
             }
             return elements;
