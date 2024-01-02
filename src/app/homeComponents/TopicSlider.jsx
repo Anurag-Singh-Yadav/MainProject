@@ -145,7 +145,7 @@ function TopicSlider() {
             data &&
 
             <div className='flex overflow-hidden sm:overflow-visible '>
-                <Carousel infiniteLoop autoPlay interval={3000}  centerMode={true} showStatus={false} stopOnHover={true} showIndicators={false} centerSlidePercentage={cardNumber} showThumbs={false} width={width > 500 ? '100vw' : '90vw'}>
+                <Carousel infiniteLoop autoPlay interval={3000}  centerMode={true} showStatus={false} stopOnHover={true} showIndicators={false} centerSlidePercentage={cardNumber} showThumbs={false} width={width > 500 ? '98vw' : '90vw'}>
                 {
                     data.map((obj, index) => {
                         
