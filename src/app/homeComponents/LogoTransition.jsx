@@ -10,7 +10,7 @@ const LogoTransition = ({screenRatio}) => {
   useEffect(() => {
     const timer = setTimeout(() =>{
       setFlag(true);
-    } , 200)
+    } , 1200)
   })
 
   return (
