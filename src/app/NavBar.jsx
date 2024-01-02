@@ -64,6 +64,7 @@ export default function NavBar() {
   const [tutorialFlag , setTutorialFlag] = useState(false)
   const [practiceFlag , setPracticeFlag] = useState(false)
 
+
   let firstFlag = true , secondFlag = true , thirdFlag = true;
 
 

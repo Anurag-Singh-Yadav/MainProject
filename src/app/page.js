@@ -7,6 +7,7 @@ import { useSelector, useDispatch } from "react-redux";
 import "./page.css";
 import ReviewCard from "./homeComponents/ReviewCard";
 import TopicSlider from "./homeComponents/TopicSlider";
+import Technicalskils from "./homeComponents/Technicalskils";
 
 export default function Home() {
   const [flag, setFlag] = useState(false);
@@ -27,7 +28,7 @@ export default function Home() {
           b[i].classList.add('active');
         }
         
-      }, 2200);
+      }, 200);
     }
   }, []);
 
@@ -56,6 +57,8 @@ export default function Home() {
                 </video>
               </div>
             </div>
+
+            <Technicalskils></Technicalskils>
 
             <TopicSlider />
 
