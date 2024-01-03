@@ -18,8 +18,6 @@ export default function Home() {
     return state.GlobalState.isLight;
   });
 
-  console.log(isLight);
-
   useEffect(() => {
     if (typeof window !== "undefined") {
       setTimeout(function () {
@@ -33,10 +31,10 @@ export default function Home() {
   }, []);
 
   return ( 
-    <div className="">
+    <div className={`${isLight ? 'lightBg' : 'darkBg'} p-2 transition duration-1000 `}>
    
         <div className="body-background min-h-screen fade-in fadeInDiv">
-            <div className="bg-white flex justify-between items-center px-16 container-1">
+            <div className="flex justify-between items-center px-16 container-1">
               <div className="">
                 <div className="">Boost your dream career with Us</div>
                 <button className="bg-primarybtn flex px-4 py-1 my-3 getStarted">

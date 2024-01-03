@@ -6,3 +6,13 @@
   .fade-in.active {
     opacity: 1;
   }
+
+  .lightBg {
+    background-color: #F6F7F8;
+    color: black;
+  }
+  
+  .darkBg {
+    background-color: #2d3142;
+    color: white;
+  }
