@@ -65,13 +65,8 @@ export default function NavBar() {
   const [practiceFlag , setPracticeFlag] = useState(false)
 
 
-  let firstFlag = true , secondFlag = true , thirdFlag = true;
-
-
   return (
     <div>
-
-
       {!flag && <LogoTransition />}
 
       {signInBtn && (
@@ -88,7 +83,7 @@ export default function NavBar() {
             </marquee>
             <MdClose
               className="text-2xl mr-3 hover:bg-slate-500 cursor-pointer"
-              onClick={(e) => {
+              onClick={() => {
                 setShowBanner(false);
               }}
             />

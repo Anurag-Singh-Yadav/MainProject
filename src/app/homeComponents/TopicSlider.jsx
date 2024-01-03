@@ -55,7 +55,7 @@ function TopicSlider(props) {
   }, []);
 
   return (
-    <div className={` ${!isLight ? "text-white" : "text-black"} p-3`}>
+    <div className={` ${!isLight ? "text-white" : "text-black"} p-3 bg-none`}>
       <div className="flex justify-center gap-2 items-center px-3">
         <div>
           <p className="text-base sm:text-xl md:text-3xl font-[500] topics-header">
