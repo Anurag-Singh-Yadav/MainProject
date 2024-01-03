@@ -5,7 +5,7 @@ function TopCompany() {
   return (
     <div className="my-6">
       <div className="flex justify-center gap-2 items-center font-serif text-4xl">
-        <div className="font-semibold uppercase skew-x-6">Top Tech Companies</div>
+        <div className="font-semibold uppercase">Top Tech Companies</div>
         <div className="text-primarybtn font-bold">Hire Students</div>
       </div>
       <div className="flex flex-wrap gap-4 px-8 justify-evenly items-center my-3">
