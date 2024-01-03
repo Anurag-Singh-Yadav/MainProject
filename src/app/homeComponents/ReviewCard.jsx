@@ -22,7 +22,7 @@ const ReviewCard = () => {
         }
       };
     return (
-        <div className="bg-white overflow-x-hidden overflow-y-clip mb-3 pt-3 h-fit">
+        <div className="overflow-x-hidden overflow-y-clip mb-3 pt-3 h-fit">
             <div className="flex justify-center items-center font-serif font-normal sm:font-medium md:font-lg lg:font-bold text-xl sm:text-2xl md:text-3xl py-4">Visitor Reviews</div>
             <Carousel responsive={responsive} showDots={true} infinite={true} autoPlay={true} autoPlaySpeed={2500}>
                 {indianCricketers.map((review, index) => (
