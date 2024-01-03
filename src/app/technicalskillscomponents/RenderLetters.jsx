@@ -19,13 +19,13 @@ public:
   };
   
 int main() {
-    int n;
-    cout << "Enter nth terms for Fibonacci series: ";
-    cin >> n;
-    Fibonacci fib;
-    cout << "nth Fibonacci number is: ";
-    cout << fib.calFib(n) << endl;
-    return 0;
+  int n;
+  cout << "Enter nth terms for Fibonacci series: ";
+  cin >> n;
+  Fibonacci fib;
+  cout << "nth Fibonacci number is: ";
+  cout << fib.calFib(n) << endl;
+  return 0;
 }`;
 
   useEffect(() => {

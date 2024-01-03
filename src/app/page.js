@@ -8,6 +8,7 @@ import "./page.css";
 import ReviewCard from "./homeComponents/ReviewCard";
 import TopicSlider from "./homeComponents/TopicSlider";
 import Technicalskils from "./homeComponents/Technicalskils";
+import InterviewExperi from "./homeComponents/InterviewExperi";
  
 export default function Home() {
   const [flag, setFlag] = useState(false);
@@ -61,6 +62,8 @@ export default function Home() {
             <Technicalskils></Technicalskils>
 
             <TopicSlider />
+
+            <InterviewExperi></InterviewExperi>
 
             <ReviewCard></ReviewCard>
         </div>
