@@ -6,7 +6,7 @@ import Concept from "../technicalskillscomponents/Concept";
 function Technicalskils() {
   return (
     <div>
-      <div className="flex justify-center items-center technical1 font-semibold md:font-bold  text-3xl md:text-6xl py-2">Technical Junction</div>
+      <div className="flex justify-center items-center technical1 font-semibold md:font-bold  text-3xl md:text-6xl py-2 skew-x-3">Technical Junction</div>
       
       <div className="technical2 flex justify-center items-center text-xl md:text-3xl px-4">Navigating Tech Challenges with Interview Express</div>
 

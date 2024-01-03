@@ -14,7 +14,7 @@ function InterviewCard({
   company_logo,
 }) {
   return (
-    <div className="my-3 border-[3px] py-2 text-black px-4 bg-[#e9ecef]">
+    <div className="my-3 border-[3px] py-4 text-black px-4 bg-[#e9ecef]">
       <div className="flex justify-between items-center">
         <div className="flex items-center">
           <div>
