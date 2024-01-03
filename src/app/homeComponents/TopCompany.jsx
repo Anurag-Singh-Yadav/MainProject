@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import assets from "@/assets/allImages";
-
 function TopCompany() {
   return (
     <div className="my-6">
