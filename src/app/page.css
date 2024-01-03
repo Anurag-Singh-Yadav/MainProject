@@ -13,6 +13,7 @@
   }
   
   .darkBg {
-    background-color: #2d3142;
+    /* background-color: #2d3142; */
+    background-color: black;
     color: white;
   }
