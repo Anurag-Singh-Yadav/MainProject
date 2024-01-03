@@ -1,7 +1,7 @@
 const interviewData = [
     {
       name: "John Doe",
-      userPhoto: "john-doe.jpg",
+      userPhoto: "",
       company: "Tech Co",
       linkedin_id: "john-doe-linkedin",
       created_on: "2022-01-01",
@@ -12,7 +12,7 @@ const interviewData = [
     },
     {
       name: "Alice Smith",
-      userPhoto: "alice-smith.jpg",
+      userPhoto: "",
       company: "Innovate Corp",
       linkedin_id: "alice-smith-linkedin",
       created_on: "2022-01-05",
@@ -23,7 +23,7 @@ const interviewData = [
     },
     {
       name: "Bob Johnson",
-      userPhoto: "bob-johnson.jpg",
+      userPhoto: "",
       company: "Data Solutions",
       linkedin_id: "bob-johnson-linkedin",
       created_on: "2022-01-10",
@@ -34,7 +34,7 @@ const interviewData = [
     },
     {
       name: "Eva Rodriguez",
-      userPhoto: "eva-rodriguez.jpg",
+      userPhoto: "",
       company: "Tech Innovators",
       linkedin_id: "eva-rodriguez-linkedin",
       created_on: "2022-01-15",
