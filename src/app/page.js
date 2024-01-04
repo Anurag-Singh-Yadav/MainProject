@@ -37,7 +37,7 @@ export default function Home() {
       } p-2 transition duration-1000 `}
     >
       <div className="body-background min-h-screen fade-in fadeInDiv">
-        <div className="flex justify-between items-center px-16 container-1">
+        <div className={`flex justify-between items-center px-16 container-1 ${isLight ? 'bg-white' : 'bg-black'}`}>
           <div className="">
             <div className="">Boost your dream career with Us</div>
             <button className="bg-primarybtn flex px-4 py-1 my-3 getStarted">
@@ -73,15 +73,10 @@ export default function Home() {
         </div>
 
         <TopCompany></TopCompany>
-
         <Technicalskils></Technicalskils>
-
         <TopicSlider />
-
         <InterviewExperi></InterviewExperi>
-
         <ReviewCard></ReviewCard>
-
         <AboutCards />
       </div>
     </div>
