@@ -4,10 +4,10 @@ import { VscSymbolNamespace } from "react-icons/vsc";
 import { VscVmOutline } from "react-icons/vsc";
 import { RiNumbersFill } from "react-icons/ri";
 
-function Concept({ bgColor, title, icon }) {
+function Concept({ title, icon }) {
   return (
     <div className={`relative flex justify-between items-center rounded-md`}>
-      <div className="absolute top-8 left-[20%] flex justify-center rounded-lg items-center w-[48px] h-[48px] bg-white ">
+      <div className="absolute top-8 left-[20%] flex justify-center rounded-lg items-center w-[48px] h-[48px] bg-white text-black ">
         {
             icon == 1 && <VscSymbolNamespace className="w-[30px] h-[30px]" />
         }

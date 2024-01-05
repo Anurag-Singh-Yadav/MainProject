@@ -11,7 +11,7 @@ function InterviewExperi() {
             Most Recent Interview <span className="technical1">Experience</span>
             ...🚀
           </div>
-          <div className="px-4 col-span-1 font-mono sm:text-xl text-normal">
+          <div className="px-4 col-span-1 font-sans font-medium sm:text-xl text-normal">
             Keep Your Edge Sharp: Read and Learn from Diverse Interview
             Journeys.
           </div>
