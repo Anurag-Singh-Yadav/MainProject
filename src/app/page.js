@@ -1,7 +1,4 @@
 "use client";
-
-
-
 import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import "./page.css";
@@ -11,6 +8,7 @@ import Technicalskils from "./homeComponents/Technicalskils";
 import InterviewExperi from "./homeComponents/InterviewExperi";
 import AboutCards from "./homeComponents/aboutCards";
 import Footer from "./homeComponents/Footer";
+import TopCompany from "./homeComponents/TopCompany";
  
 export default function Home() {
   const [flag, setFlag] = useState(false);
@@ -66,7 +64,7 @@ export default function Home() {
             )}
           </div>
             </div>
-
+            <TopCompany></TopCompany>
             <Technicalskils></Technicalskils>
             <TopicSlider />
             <InterviewExperi></InterviewExperi>
