@@ -76,8 +76,8 @@ export default function Home() {
         <Technicalskils></Technicalskils>
         <TopicSlider />
         <InterviewExperi></InterviewExperi>
-        <ReviewCard></ReviewCard>
         <AboutCards />
+        <ReviewCard></ReviewCard>
       </div>
     </div>
   );

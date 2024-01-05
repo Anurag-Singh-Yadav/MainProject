@@ -7,7 +7,7 @@ function TopCompany() {
     return state.GlobalState.isLight;
   });
   return (
-    <div className="mb-4">
+    <div className="mb-4 shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]">
       <div className="grid grid-cols-2 gap-2 items-center font-serif text-4xl pl-2 pt-2 rounded-md bg-primarybtn">
         <div className="font-semibold flex justify-end items-center text-white pb-2">Top Tech Companies</div>
         <div className={`text-primarybtn font-bold rounded-tl-[110px] pl-6 pr-2 ${isLight ? 'bg-dimWhite' : 'bg-black text-white'}`}>Hire Students</div>

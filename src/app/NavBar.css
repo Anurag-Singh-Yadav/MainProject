@@ -17,3 +17,7 @@
 .drop-down-container{
     font-family: 'Roboto', sans-serif;
 }
+.logo{
+    text-shadow: -6px -1px 0px rgba(240,255,254,0.08), 0px 3px 20px rgba(240,255,254,0.6);
+    color: #0e2954;
+}

@@ -185,7 +185,7 @@ export default function NavBar() {
 
             {/* logo */}
           <p
-            className={`mx-auto py-2 col-span-2 border-2 border-primarybtn rounded-full font-bold text-3xl font-serif px-4 ${
+            className={`hover:'logo' mx-auto py-2 col-span-2 border-2 border-primarybtn rounded-full font-bold text-3xl font-serif px-4 ${
               isLight ? "text-[#7043e3]" : "text-[#9776ec]"
             } transition duration-1000`}
           >
