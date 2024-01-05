@@ -10,6 +10,7 @@ import TopicSlider from "./homeComponents/TopicSlider";
 import Technicalskils from "./homeComponents/Technicalskils";
 import InterviewExperi from "./homeComponents/InterviewExperi";
 import AboutCards from "./homeComponents/aboutCards";
+import Footer from "./homeComponents/Footer";
  
 export default function Home() {
   const [flag, setFlag] = useState(false);
@@ -67,6 +68,8 @@ export default function Home() {
             <ReviewCard></ReviewCard>
 
             <AboutCards />
+
+            <Footer />
         </div>
  
         
