@@ -8,6 +8,11 @@ import challengeYourself2 from './challengeYourself2.png'
 import problemSolving from './problemSolving.png'
 import InterviewExperience from './interviewExperience.png'
 import exciting from './exciting.png'
+
+import JustWaving from './JustWaving.png'
+import JustWavingPurple from './JustWavingPurple.png'
+
+
 import microsoft from './microsoft.png'
 import google from './google.png'
 import amazon from './amazon.png'
@@ -16,6 +21,7 @@ import gs from './gs.png'
 import netflix from './netflix.png';
 import samsung from './samsung.png';
 import bloomberg from './bloomberg.png';
+
 const assets = {
     ComputerLogo,
     MainLogo,
@@ -27,6 +33,10 @@ const assets = {
     problemSolving, 
     InterviewExperience,
     exciting,
+
+    JustWaving,
+    JustWavingPurple,
+
     microsoft,
     google,
     amazon,
@@ -35,6 +45,7 @@ const assets = {
     netflix,
     samsung,
     bloomberg,
+
 };
 
 export default assets

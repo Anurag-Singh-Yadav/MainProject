@@ -10,7 +10,9 @@ function Technicalskils() {
       
       <div className="technical2 flex justify-center items-center text-xl md:text-3xl px-4">Navigating Tech Challenges with Interview Express</div>
 
+
       <div className="technical3 font-normal text-xl mx-4 pb-4 font-sans">Embrace the challenges, for in every tech puzzle lies an opportunity to shine. Navigating tech challenges with <span className="text-primarybtn font-bold text-2xl md:text-3xl italic cursor-pointer hover:underline hover:text-dark4">Interview Express</span> is not just a journey; it's a path to your ultimate success. So, gear up, tackle those complexities, and let your brilliance light the way to a brighter future.</div>
+
 
       <div className="grid grid-cols-1 md:grid-cols-2">
         <IDE></IDE>

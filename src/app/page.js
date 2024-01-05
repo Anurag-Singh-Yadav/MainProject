@@ -8,7 +8,12 @@ import TopicSlider from "./homeComponents/TopicSlider";
 import Technicalskils from "./homeComponents/Technicalskils";
 import InterviewExperi from "./homeComponents/InterviewExperi";
 import AboutCards from "./homeComponents/aboutCards";
+
+import Footer from "./homeComponents/Footer";
+ 
+
 import TopCompany from "./homeComponents/TopCompany";
+
 
 export default function Home() {
   const [flag, setFlag] = useState(false);
@@ -54,6 +59,27 @@ export default function Home() {
                   <path className="a3" d="M0 40 L30 72 L60 40"></path>
                 </svg>
               </div>
+
+              <div>
+                <video autoPlay width="500" loop muted>
+                  <source src="hero-globe.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+
+            <Technicalskils></Technicalskils>
+
+            <TopicSlider />
+
+            <InterviewExperi></InterviewExperi>
+
+            <ReviewCard></ReviewCard>
+
+            <AboutCards />
+
+            <Footer />
+
             </button>
           </div>
           <div>
@@ -70,6 +96,7 @@ export default function Home() {
               </video>
             )}
           </div>
+
         </div>
 
         <TopCompany></TopCompany>
