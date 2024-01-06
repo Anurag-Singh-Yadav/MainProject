@@ -7,6 +7,8 @@ import { AiOutlineCloseCircle } from "react-icons/ai";
 import TextField from "@mui/material/TextField";
 import "./signup.css";
 function Signup({ setSignInBtn }) {
+  const { data: session } = useSession();
+  console.log(session);
   const [formData, setFormData] = useState({
     email: "",
     password: "",
