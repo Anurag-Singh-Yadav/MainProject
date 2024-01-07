@@ -5,7 +5,7 @@ import TechImage1 from './techImage1.png'
 import TechImage2 from './techImage2.png'
 import challengeYourself from './challengeYourself.png'
 import challengeYourself2 from './challengeYourself2.png'
-import problemSolving from './problemSolving.png'
+// import problemSolving from './problemSolving.png'
 import InterviewExperience from './interviewExperience.png'
 import exciting from './exciting.png'
 
@@ -30,7 +30,7 @@ const assets = {
     TechImage2,
     challengeYourself, 
     challengeYourself2, 
-    problemSolving, 
+    // problemSolving, 
     InterviewExperience,
     exciting,
 

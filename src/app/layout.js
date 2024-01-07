@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./GlobalRedux/provider";
 import NavBar from "./NavBar";
-import {MyApp} from "../../pages/_app";
+import MyApp from "../../pages/_app";
 
 const inter = Inter({ subsets: ["latin"] });
 

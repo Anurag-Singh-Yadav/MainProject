@@ -2,6 +2,7 @@ import React from "react";
 import indianCricketers from "../../../public/dummyData";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import Image from "next/image";
 const ReviewCard = () => {
     const responsive = {
         superLargeDesktop: {
@@ -29,7 +30,7 @@ const ReviewCard = () => {
                     <div key={index} className="mb-7 hover:scale-105 transition-transform duration-2000 px-4"> 
                         <div className="border-[2px] border-emerald-200 bg-light5 text-dimWhite rounded-md min-h-[250px] cursor-pointer px-4 py-3">
                             <div className="flex  justify-start gap-2 items-center mb-3">
-                                <img
+                                <Image
                                     src={review.imageUrl}
                                     className="h-[70px] rounded-full border border-emerald-200  aspect-square"
                                     alt={review.name}

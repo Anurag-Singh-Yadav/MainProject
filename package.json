@@ -28,7 +28,9 @@
     "react-responsive-carousel": "^3.2.23",
     "react-simply-carousel": "^9.1.0",
     "react-slider": "^2.0.6",
-    "react-spring": "^9.7.3"
+    "react-spring": "^9.7.3",
+    "sharp": "^0.33.1",
+    "url-encode-decode": "^1.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
