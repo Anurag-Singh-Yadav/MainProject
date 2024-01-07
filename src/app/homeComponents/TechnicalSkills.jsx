@@ -1,9 +1,8 @@
 import React from "react";
-import './Technicalskills.css'
-import IDE from "../technicalskillscomponents/IDE";
 import './TechnicalSkills.css'
+import IDE from "../technicalskillscomponents/IDE";
 import Concept from "../technicalskillscomponents/Concept";
-function Technicalskils() {
+function TechnicalSkills() {
   return (
     <div>
       <div className="flex justify-center items-center technical1 font-semibold md:font-bold  text-3xl md:text-6xl py-2">Technical Junction</div>
@@ -53,4 +52,4 @@ function Technicalskils() {
   );
 }
 
-export default Technicalskils;
+export default TechnicalSkills;

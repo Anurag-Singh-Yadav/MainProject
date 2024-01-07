@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import "./page.css";
 import ReviewCard from "./homeComponents/ReviewCard";
 import TopicSlider from "./homeComponents/TopicSlider";
-import Technicalskils from "./homeComponents/Technicalskils";
+import TechnicalSkills from "./homeComponents/TechnicalSkills";
 import InterviewExperi from "./homeComponents/InterviewExperi";
 import AboutCards from "./homeComponents/aboutCards";
 import Footer from "./homeComponents/Footer";
@@ -65,7 +65,7 @@ export default function Home() {
           </div>
             </div>
             <TopCompany></TopCompany>
-            <Technicalskils></Technicalskils>
+            <TechnicalSkills></TechnicalSkills>
             <TopicSlider />
             <InterviewExperi></InterviewExperi>
             <ReviewCard></ReviewCard>

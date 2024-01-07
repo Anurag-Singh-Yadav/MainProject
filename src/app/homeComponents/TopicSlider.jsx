@@ -66,7 +66,7 @@ function TopicSlider(props) {
             for your tech interviews.
           </p>
         </div>
-        <Image src={assets.TechImage2} height={200} width={200} />
+        <Image src={assets.TechImage2} height={200} width={200} alt="topics" />
       </div>
 
       {data.map((obj, index) => {
@@ -80,7 +80,7 @@ function TopicSlider(props) {
 
               <Image
                 src={img}
-                alt={"Loading.."}
+                alt="Loading.."
                 width={150}
                 height={150}
                 loading="lazy"
