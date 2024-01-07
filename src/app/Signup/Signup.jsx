@@ -8,7 +8,8 @@ import TextField from "@mui/material/TextField";
 import "./signup.css";
 function Signup({ setSignInBtn }) {
   const { data: session } = useSession();
-  console.log(session);
+  console.log('i am in signup');
+  console.log("session",session);
   const [formData, setFormData] = useState({
     email: "",
     password: "",
