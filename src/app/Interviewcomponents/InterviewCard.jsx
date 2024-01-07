@@ -2,6 +2,7 @@ import React from "react";
 import Avatar from "react-avatar";
 import { RxCrossCircled } from "react-icons/rx";
 import { GrLinkedin } from "react-icons/gr";
+import Image from "next/image";
 function InterviewCard({
   name,
   userPhoto,
@@ -26,7 +27,7 @@ function InterviewCard({
                 round="20px"
               ></Avatar>
             )}
-            {userPhoto && <img src={userPhoto} alt="userPhoto" />}
+            {userPhoto && <Image src={userPhoto} alt="userPhoto" />}
           </div>
           <div>
             <div>
@@ -36,6 +37,7 @@ function InterviewCard({
           </div>
         </div>
         <div>
+
           {!company_logo && (
             <Avatar
               className="cursor-pointer items-center mr-8 px-2 "
@@ -44,7 +46,7 @@ function InterviewCard({
               round="20px"
             ></Avatar>
           )}
-          {company_logo && <img src={company_logo} alt="company_logo" />}
+          {company_logo && <Image src={company_logo} alt="company_logo" />}
         </div>
       </div>
 
