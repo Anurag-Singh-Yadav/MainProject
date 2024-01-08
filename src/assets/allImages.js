@@ -9,8 +9,8 @@ import challengeYourself2 from './challengeYourself2.png'
 import InterviewExperience from './interviewExperience.png'
 import exciting from './exciting.png'
 
-import JustWaving from './JustWaving.png'
-import JustWavingPurple from './JustWavingPurple.png'
+import JustWaving from './justWaving.png'
+import JustWavingPurple from './justWavingPurple.png'
 
 
 import microsoft from './microsoft.png'
