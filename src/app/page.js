@@ -15,6 +15,7 @@ export default function Home() {
 
   const dispatch = useDispatch();
 
+  
   const isLight = useSelector((state) => {
     return state.GlobalState.isLight;
   });
