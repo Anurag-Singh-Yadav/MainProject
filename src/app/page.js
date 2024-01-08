@@ -6,7 +6,7 @@ import ReviewCard from "./homeComponents/ReviewCard";
 import TopicSlider from "./homeComponents/TopicSlider";
 import TechnicalSkills from "./homeComponents/TechnicalSkills";
 import InterviewExperi from "./homeComponents/InterviewExperi";
-import AboutCards from "./homeComponents/aboutCards";
+import AboutCards from "./homeComponents/AboutCards";
 import Footer from "./homeComponents/Footer";
 import TopCompany from "./homeComponents/TopCompany";
  
