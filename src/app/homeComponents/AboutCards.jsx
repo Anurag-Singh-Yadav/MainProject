@@ -1,7 +1,7 @@
 "use client"
 
 import React from "react";
-import FlipCard from "./flipCard";
+import FlipCard from "./FlipCard";
 import assets from "@/assets/allImages";
 import './AboutCards.css'
 import Image from "next/image";
