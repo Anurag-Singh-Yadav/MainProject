@@ -66,7 +66,7 @@ function TopicSlider(props) {
             for your tech interviews.
           </p>
         </div>
-        <Image src={assets.TechImage2} height={200} width={200} alt="topics" />
+        <Image src={assets.TechImage2} height={200} alt="topics" />
       </div>
 
       {data.map((obj, index) => {
@@ -81,10 +81,11 @@ function TopicSlider(props) {
               <Image
                 src={img}
                 alt="Loading.."
-                width={150}
-                height={150}
+                width={100}
+                height={100}
                 loading="lazy"
-                className="overflow-hidden rounded-full"
+                className="overflow-hidden rounded-full object-cover"
+                style={{ width: "auto", height: "auto" }}
               />
             </div>
 

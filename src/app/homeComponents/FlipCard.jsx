@@ -15,6 +15,7 @@ function FlipCard(props){
       return state.GlobalState.isLight;
     });
 
+    
     const flipHandler = () => setFlip(!flip);
 
     return (

@@ -8,8 +8,7 @@ import TextField from "@mui/material/TextField";
 import "./signup.css";
 function Signup({ setSignInBtn }) {
   const { data: session } = useSession();
-  console.log('i am in signup');
-  console.log("session",session);
+  
   const [formData, setFormData] = useState({
     email: "",
     password: "",
@@ -107,6 +106,7 @@ function Signup({ setSignInBtn }) {
               style={{ marginBottom: 10 }}
               name="userName" // Add the name attribute
               onChange={handleChange}
+              autoComplete="username"
             />
           )}
 
@@ -118,6 +118,7 @@ function Signup({ setSignInBtn }) {
             style={{ marginBottom: 10 }}
             name="email" // Add the name attribute
             onChange={handleChange}
+            autoComplete="email"
           />
 
           <TextField
@@ -128,6 +129,7 @@ function Signup({ setSignInBtn }) {
             style={{ marginBottom: 10 }}
             type="password" // Set input type to password
             name="password" // Add the name attribute
+            autoComplete="new-password"
             onChange={handleChange}
           />
 
@@ -139,6 +141,7 @@ function Signup({ setSignInBtn }) {
               variant="outlined"
               style={{ marginBottom: 10 }}
               type="password"
+              autoComplete="new-password"
               name="confirmPassword"
               onChange={handleChange}
             />
