@@ -10,6 +10,7 @@ import { IoMdMoon } from "react-icons/io";
 import Signup from "./Signup/Signup";
 import LogoTransition from "./homeComponents/LogoTransition";
 import { toggleLight } from "./GlobalRedux/Features/GlobalStateSlice.js";
+import { useSession,signOut } from "next-auth/react";
 
 const roadMaps = ["DSA", "Web Development", "App Development"];
 const tutorials = ["DSA", "Web Development", "App Development"];
@@ -18,6 +19,8 @@ const practice = ["Mock Interview", "DSA round", "Aptitude questions"];
 export default function NavBar() {
   const [flag, setFlag] = useState(false);
 
+  const { data: sessionData } = useSession();
+  console.log('session ',sessionData);
   const [showBanner, setShowBanner] = useState(true);
   const [signInBtn, setSignInBtn] = useState(false);
   const isLogin = useSelector((state) => {
@@ -61,7 +64,7 @@ export default function NavBar() {
       {!flag && <LogoTransition />}
 
       {signInBtn && (
-        <div className="absolute w-full z-50 py-2 h-full popup">
+        <div className="absolute w-full z-50 py-2 popup">
           <Signup setSignInBtn={setSignInBtn} />
         </div>
       )}
@@ -180,10 +183,8 @@ export default function NavBar() {
               )}
             </div>
           </div>
-                    
 
-
-            {/* logo */}
+          {/* logo */}
           <p
             className={`logo mx-auto py-2 col-span-2 border-2 border-primarybtn rounded-full font-bold text-3xl font-serif px-4 ${
               isLight ? "text-[#7043e3]" : "text-[#9776ec]"
@@ -191,7 +192,6 @@ export default function NavBar() {
           >
             InterviewExpress
           </p>
-
 
           {/* search bar */}
           <div className="flex justify-end pr-4 items-center col-span-2">
@@ -203,14 +203,27 @@ export default function NavBar() {
                 <IoMdMoon className=" hover:cursor-pointer" />
               )}
             </div>
-            <button
-              className="px-4 bg-red-200 py-2 "
-              onClick={() => setSignInBtn(true)}
-            >
-              Sign In
-            </button>
-          </div>
+            {!sessionData && (
+              <button
+                className="px-4 bg-red-200 py-2 "
+                onClick={() => setSignInBtn(true)}
+              >
+                Sign In
+              </button>
+            )}
 
+            {sessionData && (
+              <button
+                className="px-4 bg-green-600 text-white py-2 "
+                onClick={() => {
+                  setSignInBtn(false);
+                  signOut();
+                }}
+              >
+                Sign Out
+              </button>
+            )}
+          </div>
         </div>
       </div>
     </div>
