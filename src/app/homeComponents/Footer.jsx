@@ -34,6 +34,7 @@ function Footer() {
         <Image
           src={isLight ? assets.JustWavingPurple : assets.JustWaving}
           alt="loading.."
+          priority={true}
           className={`absolute bottom-0 w-full z-20 ${
             isLight ? "h-28" : "h-20"
           } `}
@@ -44,6 +45,7 @@ function Footer() {
               <div className="border-2 border-primarybtn rounded-full px-4 py-2 w-fit mx-auto  sm:mx-auto flex justify-center items-center hover:scale-70 transition duration-500 ">
                 <Image
                   src={assets.MainLogo}
+                  width='auto'
                   alt="logo interviewExpress"
                   className="m-auto w-30 sm:w-80 "
                 />
