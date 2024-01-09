@@ -45,8 +45,8 @@ const ReviewCard = () => {
                   src={review.imageUrl}
                   className="h-[70px] rounded-full border border-emerald-200  aspect-square"
                   alt={review.name}
-                  width={500}
-                  height={300}
+                  width={70}
+                  height={200}
                 />
                 <div className="md:text-2xl md:font-semibold text-yellow-300">
                   {review.name}
